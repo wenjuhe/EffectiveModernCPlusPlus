@@ -10,7 +10,7 @@ namespace {
 > case 1 T is reference / pointer
 ```c++
 namespace {
-    template<typename T>
+    template<typename T>  
     void func(T& param) {
         
     }
@@ -30,4 +30,5 @@ namespace {
 1) if l-value, ---> T &
 2) if r-value, ---> normal rules apply
 > case 3 T is not a reference / pointer
+1) ignore reference & const
 > case 4 Array Decay
